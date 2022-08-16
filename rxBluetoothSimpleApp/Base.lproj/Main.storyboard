@@ -17,16 +17,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXu-E9-xg6">
-                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <rect key="frame" x="52.5" y="437.5" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1z-og-y7n">
+                                <rect key="frame" x="40" y="498.5" width="67" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="rBm-Oa-OfE"/>
+                                    <constraint firstAttribute="height" constant="50" id="rgX-in-uiz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="onDoSmthClickedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAw-xj-jew"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L1z-og-y7n" secondAttribute="trailing" constant="40" id="9KS-Yg-Zdf"/>
                             <constraint firstItem="CXu-E9-xg6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W40-jS-DOI"/>
+                            <constraint firstItem="L1z-og-y7n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="dia-d3-8gI"/>
+                            <constraint firstItem="L1z-og-y7n" firstAttribute="top" secondItem="CXu-E9-xg6" secondAttribute="bottom" constant="40" id="eXr-LJ-ZsL"/>
                             <constraint firstItem="CXu-E9-xg6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6s-Xi-7Vh"/>
                         </constraints>
                     </view>
